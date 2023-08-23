@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in Latex
+% Author : Faiyazthulla Shaik
+% Website: https://github.com/faiyazthulla-shaik/Latex_Resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://faiyazpdx.vercel.app/}{\Large Faiyazthulla Shaik}} & {\faEnvelope}\href{mailto:faiyaz@pdx.edu}{ faiyaz@pdx.edu}\\ 
+  {\faLocationArrow}{ 1818 SW 4th Avenue, Apartment 628, Portland, OR - 97201} & {\faPhone} +1 971-408-5551 \\
+{\faLinkedinSquare}\href{https://www.linkedin.com/in/faiyazthulla/} { linkedin.com/in/faiyazthulla} & {\faGithub} \href{https://github.com/faiyazthulla-shaik}{github.com/faiyazthulla-shaik}
+\vspace{-5pt}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Portland State University}{Portland, OR}
+      {Master of Science in Computer Science;  GPA: 3.83/4.00}{Mar. 2022 -- Aug. 2023}
+    \vspace{-5pt}
+    \resumeSubheading
+      {Prasad V Potluri Siddhartha Institute of Technology}{Vijayawada, India}
+      {Bachelor of Technology in Computer Science and Engineering;  GPA: 8.06/10.0}{June. 2015 -- Mar. 2019}
+    \vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+%
+%--------Technical Skills and Interests------------
+\section{Technical Skills and Interests}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Java, Python, HTML+CSS, JavaScript, C/C++}
+    \resumeSubItem{Web Dev Technologies/Tools}
+      {JSON, jQuery, ReactJs, Bootstrap, VScode, Eclipse, Git, Github, Jenkins}
+    \resumeSubItem{Frameworks/Technologies}
+      {Spring boot, JUnit, Mockito, Hibernate}
+    \resumeSubItem{Cloud/Databases}
+      {Amazon Web Services (AWS), Relational Database(MySQL), PostgreSQL, Oracle}
+    \resumeSubItem{Areas of Interest}
+      {Software Development and Engineering, Cloud Development}
+    \resumeSubItem{Soft Skills}
+      {Problem-Solving, Self-learning, Presentation, Adaptability}
+    \resumeSubItem{Relevant Coursework}
+      {Data Structures and Algorithms, Object Oriented Programming, Database Management System, Software Engineering}
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Text Emotion Analysis}
+      {Developed a model for emotion detection in English text using machine learning techniques, with a focus on analyzing emotions in textual dialogues. The model utilizes NLP techniques such as Multinomial Naive Bayes Classifier, TF-IDF Vectorizer, Linear SVM, and Logistic Regression. The accuracy of the model is evaluated using labeled tweet data sets.}
+    \resumeSubItem{Internet Relay Chat}
+      {Created a single server architecture-based application utilizing Python code and deployed it on AWS Cloud by configuring an EC2 instance. Implemented multi-user functionality, enabling users to create and manage groups, as well as broadcast messages within them.}
+    \resumeSubItem{Loan Prediction for Commercial Bank}
+      {Designed a modeling system that predicts whether the loan can be granted to the customer using Random Forest Machine Learning prediction algorithm.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Portland State University}{Portland, OR}
+      {Graduate Teaching Assistant}{Sep. 2022 - June. 2023}
+      \resumeItemListStart
+        \item {\small Conducted office hours to provide individualized support to students.\vspace{-2pt}}
+        \item {\small Drafted detailed weekly reports to the course professor to assist in directing curriculum, planning lessons, assignments, quizzes, final projects, and instructing labs.\vspace{-2pt}}
+        \item {\small Demonstrated strong communication, organizational, and time management skills while balancing multiple responsibilities.\vspace{-2pt}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Hyderabad, India}
+      {Software Engineer}{May 2019 - Feb 2022}
+      \resumeItemListStart
+        \item {\small Migrating and refactored the legacy Java code to optimized Spring boot applications with Jenkins deployment which boosted efficiency.\vspace{-2pt}}
+        \item {\small Developed RESTful API services as a middleware between the application and third-party APIs using Java.\vspace{-2pt}}
+        \item {\small Ensured application quality by developing comprehensive JUnit test cases enhancing test coverage by 80 percent. \vspace{-2pt}}
+        \item {\small Developed \& deployed web services in API model for integrating with various clients which made application scalable. \vspace{-2pt}}
+        \item {\small Collaborated closely with Software Architects and Senior Developers to design and implement high-quality software solutions using design. \vspace{-2pt}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeItemListStart
+    \item {\small Received ‘Intercultural Leadership Award’ for mentoring International Students at Portland State University.\vspace{-8pt}}
+    \item {\small Achieved a commendable score in the global coding event 'CODE VITA' organized by TCS.\vspace{-8pt}}
+    \item {\small Recognized with the 'Best Team Award' for delivering thoroughly tested, bug-free code and making significant contributions to the project at Tata Consultancy Services.\vspace{-8pt}}
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
+
