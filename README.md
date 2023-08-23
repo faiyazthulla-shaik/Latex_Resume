@@ -1,2 +1,2 @@
-# Latex_Resume
-.tex code for SDE Resume
+# LATEX Resume
+The repository contains the .tex code. 
